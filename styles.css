@@ -8,8 +8,7 @@
 .gridContainer{
     display: flex;
     justify-content: center;
-    height: 1600px;
-    width: 1600px;
+    background-color: black;
     
 
 }

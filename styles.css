@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 150px;
+}
+
+.btn {
+    font-size: 24px;
+    height: 100px;
+    width: 480px;
+}
 
 .gridContainer{
     display: flex;

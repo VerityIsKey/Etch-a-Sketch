@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.gridContainer{
+    display: flex;
+    justify-content: center;
+    height: 1600px;
+    width: 1600px;
+    
+
+}
+
+.parentSquares {
+    
+
+}
+.gridSquare {
+    flex: 1;
+    background-color: blue;
+    border-color: black;
+    border-style: solid;
+    min-height: 50px;
+    min-width: 50px;
+    max-height: 100px;
+    max-width: 100px;
+
+}

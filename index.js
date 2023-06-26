@@ -2,6 +2,11 @@ const gridContainer = document.querySelector('.gridContainer');
 const btn = document.querySelector('.btn');
 let gridSize = 16;
 createGrid(gridSize);
+drawOnGrid();
+
+
+
+
 
 function createGrid(gridSize){
     let squareSize = 960 / gridSize;
@@ -32,12 +37,36 @@ function removeCurrentGrid(){
     });
 }
 
+function drawOnGrid(){
+    const gridSquares = document.querySelectorAll('.gridSquare');
+
+    gridSquares.forEach(function(gridSquare){
+        gridSquare.addEventListener('mouseover',function(){
+            
+            //gridSquare.style.backgroundColor = rgb(math.floor(math.random()*256), math.floor(math.random()*256), math.floor(math.random()*256));
+            gridSquare.style.backgroundColor = 'white';
+        })
+    })
+}
+
 function promptGrid(gridSize){
     gridSize = parseInt(prompt("Enter the grid size"));
     removeCurrentGrid();
     createGrid(gridSize);
+    drawOnGrid();
 }
 
 btn.addEventListener('click', promptGrid);
 
+
+
+// const gridSquares = document.querySelectorAll('.gridSquare');
+
+// gridSquares.forEach(function(gridSquare){
+//     gridSquare.addEventListener('mouseover',function(){
+//         //gridSquare.style.backGroundColor = rgb(math.floor(math.random()*256), math.floor(math.random()*256), math.floor(math.random()*256));
+//         gridSquare.style.backgroundColor = 'white';
+//         console.log(gridSquare);
+//     })
+// })
 

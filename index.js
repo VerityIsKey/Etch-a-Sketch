@@ -57,10 +57,14 @@ function drawOnGrid(){
 }
 
 function promptGrid(gridSize){
-    gridSize = parseInt(prompt("Enter the grid size"));
-    removeCurrentGrid();
-    createGrid(gridSize);
-    drawOnGrid();
+    gridSize = parseInt(prompt("Enter the grid size between 1-100"));
+    if(gridSize > 100 || gridSize < 1){
+        promptGrid(gridSize);
+    }else{
+        removeCurrentGrid();
+        createGrid(gridSize);
+        drawOnGrid(); 
+    }
 }
 
 btn.addEventListener('click', promptGrid);

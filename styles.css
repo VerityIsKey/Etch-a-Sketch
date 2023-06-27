@@ -36,8 +36,7 @@
 .gridSquare {
     flex: 1;
     background-color: white;
-    border-color: black;
-    border-style: solid;
+    
   
     max-height: 100px;
     max-width: 100px;
